@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
 
-    fetch("/src/properties.json")
+    fetch("/properties.json")
       .then((response) => response.json())
       .then((data) => {
         setProperties(data);
