@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Green Nest PG",
+    "city": "Pune",
+    "price": 9000,
+    "gender": "Female"
+  },
+  {
+    "id": 2,
+    "name": "Sunrise PG",
+    "city": "Pune",
+    "price": 8500,
+    "gender": "Male"
+  },
+  {
+    "id": 3,
+    "name": "Royal Stay PG",
+    "city": "Bangalore",
+    "price": 10000,
+    "gender": "Male/Female"
+  },
+  {
+    "id": 4,
+    "name": "Happy Home PG",
+    "city": "Delhi",
+    "price": 7500,
+    "gender": "Female"
+  }
+]
