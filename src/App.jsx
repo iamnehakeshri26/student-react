@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-
+import Navbar from "./components/Navbar";
 function App() {
 
   const [properties, setProperties] = useState([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
 
@@ -17,12 +18,20 @@ function App() {
 
   return (
     <div style={{ padding: "30px", background: "#f5f5f5", minHeight: "100vh" }}>
-
+<Navbar
+  title="Student Accommodation"
+  search={search}
+  setSearch={setSearch}
+/>
       <h1 style={{ textAlign: "center", color: "#0d6efd" }}>
         Student Accommodation
       </h1>
 
-      {properties.map((property) => (
+      {properties
+  .filter((property) =>
+    property.city.toLowerCase().includes(search.toLowerCase())
+  )
+  .map((property) => (
 
         <div
           key={property.id}
